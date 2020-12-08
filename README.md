@@ -1,6 +1,6 @@
-############################################
+
 ############################ FRANÇAIS ######
-############################################
+
 
 **QUOI //**
 
@@ -10,13 +10,13 @@
 
 - un composant HOME : introduit les fonctionnalités, contient :
   -> un background 
-  -> un champs d'informations                                                                 ################################################
-                                                                                              #                    NOTE                      #
-- un composant SCHOOLS : là où tout se déroule, contient :                                    #  pour l'instant ces états font cracher l'app #
-  -> une entête qui comporte nos inputs                                                       #         AL | CA | FL | GA | HI | ID          # 
-  -> une section qui regroupe le résultats de l'input                                         #         NV | NJ | OK | RI | VT | VW          #
-  -> une section composée d'une carte mapbox                                                  #                                              #
-  -> un pied de page qui contient les abréviations des États-Unis d'Amérique                  # ##############################################
+  -> un champs d'informations                                                                 
+                                                                                              
+- un composant SCHOOLS : là où tout se déroule, contient :                                    
+  -> une entête qui comporte nos inputs                                                       
+  -> une section qui regroupe le résultats de l'input                                         
+  -> une section composée d'une carte mapbox                                                  
+  -> un pied de page qui contient les abréviations des États-Unis d'Amérique                  
 
 **FONCTIONNALITÉS //**
 ==> à la soumission du formulaire
@@ -34,9 +34,8 @@
   - l'app utilise des variables stockées dans un fichier qui n'est pas téléverser sur git
   - configurez une clé d'accès pour faire des requêtes à l'api 
 
-############################################
 ############################ ENGLISH  ######
-############################################
+
 
 **WHAT //**
 
@@ -70,4 +69,12 @@
   - some variables used in the project come from a folder that is not pushed on git
   - to be able to make requests to the api you need to set up credentials 
 
+
+################################################
+#                    NOTE                      #
+#  pour l'instant ces états font cracher l'app #
+#         AL | CA | FL | GA | HI | ID          # 
+#         NV | NJ | OK | RI | VT | VW          #
+#                                              #
+################################################
 
