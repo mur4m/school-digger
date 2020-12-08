@@ -1,0 +1,94 @@
+.home {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.home-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -150px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.home-infos {
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5rem;
+  padding: 2rem;
+  position: relative;
+  color: rgb(95, 93, 93);
+}
+
+.home-list {
+  color: tomato;
+  list-style-type: none;
+  width: 100px;
+}
+
+.home-infos p {
+  text-align: justify;
+  color: dimgrey;
+}
+.home-list li {
+  margin-bottom: 1rem;
+}
+
+.home-list-icon {
+  color: tomato;
+  font-size: 50px;
+  position: absolute;
+  left: 100px;
+}
+
+.home button {
+  cursor: pointer;
+  background-color: white;
+  height: 30px;
+  border: 2px solid tomato;
+  border-radius: 5px;
+  color: tomato;
+}
+
+.home button:hover {
+  background-color: tomato;
+  border: none;
+  transform: scale(1.2);
+  color: white;
+}
+
+.home-infos:before,
+.home-infos:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.home-infos:after {
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
