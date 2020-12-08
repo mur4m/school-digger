@@ -24,7 +24,6 @@ const Schools = () => {
   // SENSITIVE INFOS CONST
   const API_KEY = process.env.REACT_APP_API_KEY;
   const API_ID = process.env.REACT_APP_API_ID;
-  //   let dynamicURL = "";
 
   useEffect(() => {
     fetchItems();
@@ -50,15 +49,8 @@ const Schools = () => {
         const result = await axios.get(
           `https://api.schooldigger.com/v1/schools?st=${usState}&q=${nameOfSchoolorCity}&appID=${API_ID}&appKey=${API_KEY}`
         );
-        // console.log("result>>>>>>>>", result);
-        // console.log("headers>>>>>>>>", result.headers);
         setSchools(result.data.schoolList);
         setResData(result.data.numberOfSchools);
-        // console.log("(2)what state is inside axios atm?", usState);
-        // console.log("(5)what is inside resData", resData);
-        console.log(result);
-
-        // console.log(usState);
       } catch (error) {
         console.log(error);
       }
