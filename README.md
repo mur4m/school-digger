@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+########################################################################
+############################ FRANÇAIS ##################################
+########################################################################
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**QUOI //**
 
-## Available Scripts
+ - app qui utilise l'api : https://any-api.com/schooldigger_com/schooldigger_com/docs/API_Description
+ 
+**PRESENTATION //**
 
-In the project directory, you can run:
+- un composant HOME : introduit les fonctionnalités, contient :
+  -> un background 
+  -> un champs d'informations                                                                 ################################################
+                                                                                              #                    NOTE                      #
+- un composant SCHOOLS : là où tout se déroule, contient :                                    #  pour l'instant ces états font cracher l'app #
+  -> une entête qui comporte nos inputs                                                       #         AL | CA | FL | GA | HI | ID          # 
+  -> une section qui regroupe le résultats de l'input                                         #         NV | NJ | OK | RI | VT | VW          #
+  -> une section composée d'une carte mapbox                                                  #                                              #
+  -> un pied de page qui contient les abréviations des États-Unis d'Amérique                  # ##############################################
 
-### `npm start`
+**FONCTIONNALITÉS //**
+==> à la soumission du formulaire
+  - recherche d'écoles par états
+  - recherche par nom d'école
+  - affichage des écoles sur la carte (adresses, nom, nombres d'étudiants)
+  - au clique sur la carte, on retrouve les coordonnées géographiques des écoles ainsi que leur noms
+ 
+**UTILISATION //**
+  - l'app utilse ReactJS
+  - installer les dépendances avec : npm install 
+  - lancer l'app avec : npm start
+  
+**ATTENTION //**
+  - l'app utilise des variables stockées dans un fichier qui n'est pas téléverser sur git
+  - configurez une clé d'accès pour faire des requêtes à l'api 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+########################################################################
+############################ ENGLISH ###################################
+########################################################################
+**WHAT //**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ - the app uses the api : https://any-api.com/schooldigger_com/schooldigger_com/docs/API_Description
+ 
+**PRESENTATION //**
 
-### `npm test`
+- HOME component : introduces the functionnalities, includes :
+  -> a background 
+  -> an information box
+  
+- SCHOOLS component : where everythinh takes place, includes :
+  -> a header wrapping inputs
+  -> a section dedicated to the input's result
+  -> a mapbox section
+  -> a footer displaying the states of the us abbreviations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**FONCTIONNALITIES //**
+==> on submit
+  - search school by state
+  - search by school name
+  - display results on the map (addresses, names, number of students)
+  - on click, we cand find a school's name and address
+ 
+**HOW TO USE//**
+  - the app uses ReactJS
+  - install dependancies : npm install 
+  - launch app : npm start
+  
+**CAUTION //**
+  - some variables used in the project come from a folder that is not pushed on git
+  - to be able to make requests to the api you need to set up credentials 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
